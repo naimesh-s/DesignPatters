@@ -7,7 +7,7 @@ public class TestSingleton {
 			for(int i=0; i<5; i++) {
 				System.out.println("Child thread running...");
 			}
-			SingletonLazy s1 = SingletonLazy.getInstance();
+			SingletonSynchronizedBlock s1 = SingletonSynchronizedBlock.getInstance();
 			System.out.println(s1);
 		};
 		
@@ -16,7 +16,7 @@ public class TestSingleton {
 		for(int i=0; i<5; i++) {
 			System.out.println("Main thread running...");
 		}
-		SingletonLazy s2 = SingletonLazy.getInstance();
+		SingletonSynchronizedBlock s2 = SingletonSynchronizedBlock.getInstance();
 		System.out.println(s2);
 		
 	}
